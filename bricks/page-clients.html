@@ -1,24 +1,14 @@
 <template>
-  <section class="block">
-    <table>
-      <thead>
-        <th>Name</th>
-        <th>Age</th>
-      </thead>
-      <tbody>
-        <tr :for="user in state.users">
-          <td>${ user.name }</td>
-          <td>${ user.age }</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+  <h1>Clients</h1>
 
   <section :for="user in state.users" class="block">
     <h1>${ user.name }</h1>
     <p>
       <small>${ user.age }</small>
     </p>
+    <nav>
+      <a href="/client/${ user.id }">edit</a>
+    </nav>
   </section>
 </template>
 
@@ -26,8 +16,8 @@
   init() {
     this.state = {
       users: [
-        { name: 'John Doe', age: 30 },
-        { name: 'Jess Dean', age: 40 },
+        { id: 1, name: 'John Doe', age: 30 },
+        { id: 2, name: 'Jess Dean', age: 40 },
       ]
     }
   }

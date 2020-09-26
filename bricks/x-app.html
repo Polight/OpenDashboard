@@ -9,6 +9,7 @@
   <section name="center">
     <page-dashboard :if="state.page === 'dashboard'"></page-dashboard>
     <page-clients :if="state.page === 'clients'"></page-clients>
+    <page-client :if="state.page === 'client'" :id="state.clientId"></page-client>
   </section>
   <section name="right"></section>
 </template>
@@ -25,6 +26,11 @@
 
     page('/clients', () => {
       this.state.page = 'clients'
+    })
+
+    page('/client/:id', (req) => {
+      this.state.page = 'client'
+      this.state.clientId = req.params.id
     })
 
     page({ hashbang: true, click: true })

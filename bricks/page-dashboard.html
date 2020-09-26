@@ -1,0 +1,36 @@
+<template>
+  <h1>Dashboard</h1>
+
+  <section class="block">
+    <table>
+      <thead>
+        <th>Name</th>
+        <th>Age</th>
+        <th></th>
+      </thead>
+      <tbody>
+        <tr :for="user in state.users">
+          <td>${ user.name }</td>
+          <td>${ user.age }</td>
+          <td><a href="#!/client/${ user.id }" class="button">Edit</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</template>
+
+<script>
+  init() {
+    this.state = {
+      users: [
+        { id: 1, name: 'John Doe', age: 30 },
+        { id: 2, name: 'Jess Dean', age: 40 },
+      ]
+    }
+  }
+</script>
+
+<style>
+  @import url('/assets/css/main.css');
+</style>
