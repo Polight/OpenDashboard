@@ -1,3 +1,6 @@
 [submodule "assets/css/decor"]
 	path = assets/css/decor
 	url = https://github.com/Polight/decor
+[submodule "assets/js/page"]
+	path = assets/js/page
+	url = https://github.com/visionmedia/page.js.git

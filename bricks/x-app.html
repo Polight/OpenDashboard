@@ -7,10 +7,29 @@
     </nav>
   </section>
   <section name="center">
-    <page-clients></page-clients>
+    <page-dashboard :if="state.page === 'dashboard'"></page-dashboard>
+    <page-clients :if="state.page === 'clients'"></page-clients>
   </section>
   <section name="right"></section>
 </template>
+
+<script>
+  init() {
+    this.state = {
+      page: ''
+    }
+
+    page('/', () => {
+      this.state.page = 'dashboard'
+    })
+
+    page('/clients', () => {
+      this.state.page = 'clients'
+    })
+
+    page({ hashbang: true, click: true })
+  }
+</script>
 
 <style>
   @import url("/assets/css/main.css");
