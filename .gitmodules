@@ -1,0 +1,3 @@
+[submodule "assets/css/decor"]
+	path = assets/css/decor
+	url = https://github.com/Polight/decor

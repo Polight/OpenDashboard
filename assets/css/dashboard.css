@@ -1,0 +1,42 @@
+:root {
+  --background-color: #f9f9f6
+}
+body {
+  background-color: var(--background-color);
+}
+nav a:hover,
+nav a:focus {
+  background-color: #555;
+}
+
+table {
+  border-spacing: 10px;
+  border-collapse: collapse;
+  width: 100%;
+}
+table thead {
+  border-radius: .3rem;
+}
+table thead th {
+  background-color: var(--background-color);
+}
+table thead :first-child,
+table thead :last-child {
+  border-radius: .3rem;
+}
+table th {
+  text-align: left;
+}
+table td,
+table th {
+  padding: .3rem 1rem;
+}
+
+.block {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: .5rem;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 .5rem rgba(150, 150, 150, .3);
+  margin: 0 1rem 1rem 0;
+}

@@ -1,0 +1,38 @@
+<template>
+  <section class="block">
+    <table>
+      <thead>
+        <th>Name</th>
+        <th>Age</th>
+      </thead>
+      <tbody>
+        <tr :for="user in state.users">
+          <td>${ user.name }</td>
+          <td>${ user.age }</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section :for="user in state.users" class="block">
+    <h1>${ user.name }</h1>
+    <p>
+      <small>${ user.age }</small>
+    </p>
+  </section>
+</template>
+
+<script>
+  init() {
+    this.state = {
+      users: [
+        { name: 'John Doe', age: 30 },
+        { name: 'Jess Dean', age: 40 },
+      ]
+    }
+  }
+</script>
+
+<style>
+  @import url('/assets/css/main.css');
+</style>
