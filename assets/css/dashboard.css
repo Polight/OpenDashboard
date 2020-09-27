@@ -54,11 +54,11 @@ table thead {
 }
 table thead th {
   background-color: var(--background-color);
+  font-size: .9em;
 }
 table thead :first-child,
 table thead :last-child {
   border-radius: .3rem;
-  font-size: .88em;
   text-transform: uppercase;
 }
 table th {
