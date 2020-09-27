@@ -1,0 +1,35 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "A quick bootstraping dashboard",
+  "main": "index.html",
+  "dependencies": {
+    "@polight/lego": "^1.2.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "live-server": "^1.2.1"
+  },
+  "scripts": {
+    "start": "concurrently 'npm run watch' 'live-server --no-browser'",
+    "watch": "npm run build -- -w",
+    "build": "lego bricks dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Polight/dashboard.git"
+  },
+  "keywords": [
+    "dashboard",
+    "lego",
+    "webcomponents",
+    "template"
+  ],
+  "author": "Vincent Agnano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Polight/dashboard/issues"
+  },
+  "homepage": "https://github.com/Polight/dashboard#readme"
+}

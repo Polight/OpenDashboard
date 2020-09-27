@@ -19,6 +19,18 @@ section[name="center"] {
   padding: 1rem;
   min-height: 100vh;
 }
+.menu header {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #555;
+}
+.menu header img {
+  display: block;
+  max-height: 100px;
+  margin: 0 auto;
+}
 .menu nav a {
   display: block;
   color: #fff;
