@@ -1,6 +1,6 @@
 # Dashboard
 
-_Dashboard_ is a desktop generic dashboard with components for bootstraping a dashboard app quickly.
+[_Dashboard_](https://github.com/polight/dashboard) is a desktop generic dashboard with components for bootstraping a dashboard app quickly.
 
 <img width="864" alt="Screen Shot 2020-09-27 at 05 59 25" src="https://user-images.githubusercontent.com/145172/94355712-a80d6580-0086-11eb-972d-492d2591e63d.png">
 
