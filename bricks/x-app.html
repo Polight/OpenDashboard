@@ -1,8 +1,8 @@
 <template>
-  <section name="left">
+  <section class="menu">
     <header>Naturapeute Pro</header>
     <nav>
-      <a href="/">Tableau de bord</a>
+      <a href="/">Dashboard</a>
       <a href="/clients">Clients</a>
     </nav>
   </section>
@@ -45,20 +45,4 @@
     display: flex;
     flex-direction: row;
   }
-  section[name="center"] {
-    flex-grow: 1;
-    padding: 1rem;
-  }
-  section[name="left"] {
-    background-color: #333;
-    padding: 1rem;
-    min-height: 100vh;
-  }
-  section[name="left"] a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    padding: .5rem 1rem;
-  }
-
 </style>

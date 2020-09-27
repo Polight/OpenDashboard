@@ -4,8 +4,31 @@
 body {
   background-color: var(--background-color);
 }
-nav a:hover,
-nav a:focus {
+
+h1 { font-size: 1.3rem; }
+h2 { font-size: 1.1rem; }
+h3 { font-size: 1rem; }
+
+section[name="center"] {
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+.menu {
+  background-color: #333;
+  padding: 1rem;
+  min-height: 100vh;
+}
+.menu nav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: .5rem 1rem;
+  margin-bottom: .5rem;
+}
+
+.menu nav a:hover,
+.menu nav a:focus {
   background-color: #555;
 }
 
@@ -23,6 +46,8 @@ table thead th {
 table thead :first-child,
 table thead :last-child {
   border-radius: .3rem;
+  font-size: .88em;
+  text-transform: uppercase;
 }
 table th {
   text-align: left;

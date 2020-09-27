@@ -1,14 +1,15 @@
 <template>
   <h1>Clients</h1>
-
-  <section :for="user in state.users" class="block">
-    <h1>${ user.name }</h1>
-    <p>
-      <small>${ user.age }</small>
-    </p>
-    <nav>
-      <a href="/client/${ user.id }">edit</a>
-    </nav>
+  <section class="tile">
+    <article :for="user in state.users" class="block">
+      <h1>${ user.name }</h1>
+      <p>
+        <small>${ user.age }</small>
+      </p>
+      <nav>
+        <a href="/client/${ user.id }" class="button primary">edit</a>
+      </nav>
+    </article>
   </section>
 </template>
 
@@ -25,4 +26,8 @@
 
 <style>
   @import url('/assets/css/main.css');
+
+  .tile {
+    display: flex;
+  }
 </style>
