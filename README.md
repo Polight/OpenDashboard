@@ -13,6 +13,7 @@ It's fully customizable overriding or replacing the _dashboard.css_ file.
 ```
 git clone https://github.com/Polight/dashboard
 cd dashboard
+git submodule init && git submodule update
 npm install
 npm start
 ```
