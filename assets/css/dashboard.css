@@ -40,7 +40,8 @@ section[name="center"] {
 }
 
 .menu nav a:hover,
-.menu nav a:focus {
+.menu nav a:focus,
+.menu nav a[active] {
   background-color: #555;
 }
 

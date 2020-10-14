@@ -4,7 +4,7 @@
     <article :for="user in state.users" class="block">
       <h1>${ user.name }</h1>
       <p>
-        <small>${ user.age }</small>
+        <small>Age: ${ user.age }</small>
       </p>
       <nav>
         <a href="/client/${ user.id }" class="button primary">edit</a>

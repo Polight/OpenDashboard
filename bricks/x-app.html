@@ -5,8 +5,8 @@
       <h1>Open Dashboard</h1>
     </header>
     <nav>
-      <a href="/">Dashboard</a>
-      <a href="/clients">Clients</a>
+      <a href="/" :active="state.page === 'dashboard'">Dashboard</a>
+      <a href="/clients":active="state.page.startsWith('client')">Clients</a>
     </nav>
   </section>
   <section name="center">
@@ -24,16 +24,15 @@
     }
 
     page('/', () => {
-      this.state.page = 'dashboard'
+      this.render({ page: 'dashboard' })
     })
 
     page('/clients', () => {
-      this.state.page = 'clients'
+      this.render({ page: 'clients' })
     })
 
     page('/client/:id', (req) => {
-      this.state.page = 'client'
-      this.state.clientId = req.params.id
+      this.render({ page: 'client', clientId: req.params.id })
     })
 
     page({ hashbang: true, click: true })
@@ -47,5 +46,9 @@
     flex-grow: 1;
     display: flex;
     flex-direction: row;
+  }
+
+  nav[selected] {
+
   }
 </style>
